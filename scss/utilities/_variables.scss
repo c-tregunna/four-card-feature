@@ -1,0 +1,54 @@
+// Colors
+
+$white: #fff;
+$black: #000;
+
+$red: rgb(234, 83, 83);
+$cyan: rgb(69, 211, 211);
+$orange: rgb(252, 175, 74);
+$blue: rgb(84, 158, 242);
+
+$darkBlue: rgb(76, 78, 97);
+$grayisBlue: rgb(163, 165, 174);
+$lightGray: rgb(250, 250, 250);
+
+// Media Breakpoints
+
+$break-m: 980px;
+$break-l: 1024px;
+
+$max-width: 1200px;
+
+//for top border color of cards
+
+// $card-styles: (
+//   super: (
+//     card-top: $cyan,
+//     image: "../images/icon-supervisor.svg",
+//   ),
+//   team: (
+//     card-top: $red,
+//     image: "../images/icon-team-builder.svg",
+//   ),
+//   karma: (
+//     card-top: $orange,
+//     image: "../images/icon-karma.svg",
+//   ),
+//   calc: (
+//     card-top: $blue,
+//     image: "../images/icon-calculator.svg",
+//   ),
+// );
+$top-color: (
+  ".super": $cyan,
+  ".team": $red,
+  ".karma": $orange,
+  ".calc": $blue,
+);
+
+$card-image: (
+  ".super-image": url("../images/icon-supervisor.svg"),
+  ".team-image": url("../images/icon-team-builder.svg"),
+  ".karma-image": url("../images/icon-karma.svg"),
+  ".calc-image": url("../images/icon-calculator.svg"),
+);

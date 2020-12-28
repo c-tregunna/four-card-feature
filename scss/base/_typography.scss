@@ -1,0 +1,14 @@
+h2 {
+  font-size: 1.25em;
+  margin: 2px;
+  &.heading {
+    font-weight: 100;
+  }
+  &.heading-bold {
+    font-weight: 500;
+  }
+}
+
+h3.card_heading {
+  font-weight: 500;
+}

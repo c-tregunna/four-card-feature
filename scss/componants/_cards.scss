@@ -1,0 +1,43 @@
+.card {
+  @include flex($dir: column, $align: flex-start, $just: space-between);
+  background: $white;
+  box-shadow: 0px 2px 6px 2px $grayisBlue;
+  margin: 20px auto;
+  padding: 20px;
+  height: 260px;
+  border-radius: 8px;
+  position: relative;
+  max-width: 300px;
+  &_top {
+    height: 4px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 8px 8px 0 0;
+  }
+  &_info {
+    font-weight: 200;
+    color: $grayisBlue;
+  }
+  &_image {
+    align-self: flex-end;
+    height: 80px;
+    width: 30%;
+    background-repeat: no-repeat;
+    margin-bottom: 0;
+  }
+}
+
+//each top - first key, and color - second key, in the top class takes on the color
+@each $top, $color in $top-color {
+  #{$top} {
+    background-color: $color;
+  }
+}
+
+@each $card, $image in $card-image {
+  #{$card} {
+    background-image: $image;
+  }
+}
