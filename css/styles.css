@@ -436,6 +436,23 @@ footer {
   text-align: center;
   padding: 20px 10px;
 }
+@media (min-width: 980px) {
+  header,
+footer {
+    max-width: 40%;
+    margin: auto;
+  }
+}
+
+@media (min-width: 980px) {
+  main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    max-width: 1100px;
+  }
+}
 
 .intro p {
   color: #a3a5ae;
@@ -444,10 +461,21 @@ footer {
   font-size: 0.75em;
   line-height: 20px;
 }
+@media (min-width: 980px) {
+  .intro p {
+    font-size: 1.25em;
+    line-height: 26px;
+  }
+}
 
 h2 {
   font-size: 1.25em;
   margin: 2px;
+}
+@media (min-width: 980px) {
+  h2 {
+    font-size: 2em;
+  }
 }
 h2.heading {
   font-weight: 100;
@@ -466,7 +494,7 @@ h3.card_heading {
   justify-content: space-between;
   align-items: flex-start;
   background: #fff;
-  box-shadow: 0px 2px 6px 2px #a3a5ae;
+  box-shadow: #d9dade 0px 6px 18px -8px, #d9dade 0px 24px 17px -8px;
   margin: 20px auto;
   padding: 20px;
   height: 260px;
@@ -524,6 +552,12 @@ h3.card_heading {
 
 .calc-image {
   background-image: url("../images/icon-calculator.svg");
+}
+
+.card_col_side {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -21,6 +21,18 @@ header,
 footer {
   text-align: center;
   padding: 20px 10px;
+  @include medq($break-m) {
+    max-width: 40%;
+    margin: auto;
+  }
+}
+
+main {
+  @include medq($break-m) {
+    @include flex($dir: row, $just: space-evenly);
+    width: 100%;
+    max-width: 1100px;
+  }
 }
 
 .intro p {
@@ -29,4 +41,8 @@ footer {
   font-weight: 200;
   font-size: 0.75em;
   line-height: 20px;
+  @include medq($break-m) {
+    font-size: 1.25em;
+    line-height: 26px;
+  }
 }

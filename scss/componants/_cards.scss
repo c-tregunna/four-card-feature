@@ -1,13 +1,16 @@
 .card {
   @include flex($dir: column, $align: flex-start, $just: space-between);
   background: $white;
-  box-shadow: 0px 2px 6px 2px $grayisBlue;
+  box-shadow: lighten($grayisBlue, 20%) 0px 6px 18px -8px,
+    lighten($grayisBlue, 20%) 0px 24px 17px -8px;
+  //box-shadow: 0px 2px 6px 2px $grayisBlue;
   margin: 20px auto;
   padding: 20px;
   height: 260px;
   border-radius: 8px;
   position: relative;
   max-width: 300px;
+
   &_top {
     height: 4px;
     width: 100%;
@@ -40,4 +43,8 @@
   #{$card} {
     background-image: $image;
   }
+}
+
+.card_col_side {
+  @include flex($dir: row, $align: center);
 }

@@ -1,6 +1,9 @@
 h2 {
   font-size: 1.25em;
   margin: 2px;
+  @include medq($break-m) {
+    font-size: 2em;
+  }
   &.heading {
     font-weight: 100;
   }
