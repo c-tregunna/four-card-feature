@@ -419,6 +419,7 @@ body {
   background-color: #fafafa;
   color: #4c4e61;
   font-family: "Poppins", Arial, Helvetica, sans-serif;
+  overflow: hidden;
 }
 
 header,
@@ -439,7 +440,7 @@ footer {
 @media (min-width: 980px) {
   header,
 footer {
-    max-width: 40%;
+    max-width: 50%;
     margin: auto;
   }
 }
@@ -497,7 +498,7 @@ h3.card_heading {
   box-shadow: #d9dade 0px 6px 18px -8px, #d9dade 0px 24px 17px -8px;
   margin: 20px auto;
   padding: 20px;
-  height: 260px;
+  height: 240px;
   border-radius: 8px;
   position: relative;
   max-width: 300px;

@@ -8,6 +8,7 @@ body {
   background-color: $lightGray;
   color: $darkBlue;
   font-family: "Poppins", Arial, Helvetica, sans-serif;
+  overflow: hidden;
 }
 header,
 main,
@@ -22,7 +23,7 @@ footer {
   text-align: center;
   padding: 20px 10px;
   @include medq($break-m) {
-    max-width: 40%;
+    max-width: 50%;
     margin: auto;
   }
 }
